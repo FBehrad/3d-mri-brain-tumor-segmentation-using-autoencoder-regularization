@@ -1,10 +1,9 @@
-from keras.engine import Layer, InputSpec
-from keras import initializers
-from keras import regularizers
-from keras import constraints
-from keras import backend as K
-
-from keras.utils.generic_utils import get_custom_objects
+from tf.keras.layers import InputSpec, Layer
+from tf.keras import initializers
+from tf.keras import regularizers
+from tf.keras import constraints
+import tf.keras.backend as K
+from tf.keras.utils import get_custom_objects
 
 
 class GroupNormalization(Layer):
